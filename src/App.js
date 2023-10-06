@@ -77,7 +77,7 @@ function App() {
           </div>
         </div>
         <div className='border-2 rounded px-10 mx-10'>
-          <div className='flex items-center justify-between border-b p-2 text-xl'>
+          <div className='flex items-center justify-between border-b p-2 text-xl text-gray-600'>
             <span>state</span>
             <span>name</span>
             <span>field</span>
