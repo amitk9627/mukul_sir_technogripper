@@ -6,7 +6,7 @@ import { CategoryScale } from "chart.js";
 Chart.register(CategoryScale);
 const PieChart = ({chartData}) => {
   return (
-    <div className='h-44 w-full rounded  border-2 border-r-2 flex flex-col p-2 relative' >
+    <div className='h-44 w-full rounded  border-2 border-r-2 flex flex-col p-2 relative mt-1' >
        <PolarArea data={chartData} options={{
           plugins: {
             title: {
