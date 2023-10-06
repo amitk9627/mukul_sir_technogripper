@@ -9,6 +9,7 @@ import Navbar from './container/Navbar';
 import { UserData } from './container/Data'
 
 function App() {
+  // project 1 *******************
   const [userData, satUserData] = useState({
     labels: UserData.map(data => data.year),
     datasets: [{
@@ -43,7 +44,10 @@ function App() {
       ]
     }]
   })
+
+  // project 2 *****************
   const [statex, setState] = useState([]);
+
   useEffect(() => {
     (async () => {
 
@@ -65,6 +69,7 @@ function App() {
 
   return (
     <div className="" >
+      {/* project 1 * ********************* */}
       <div className='h-full w-full mb-16'>
         <Navbar />
         <div className='flex  max-md:flex-col items-center justify-center gap-16 m-5'>
@@ -90,15 +95,17 @@ function App() {
             <span>xyzabcd</span>
           </div>
           <div className='flex items-center justify-between font-bold border-b-2 border-b p-2 text-xl'>
-          <span>state</span>
-          <span>name</span>
-          <span>field</span>
-          <span>xyzabcd</span>
+            <span>state</span>
+            <span>name</span>
+            <span>field</span>
+            <span>xyzabcd</span>
+          </div>
         </div>
-        </div>
-        
+
       </div>
       <hr />
+
+      {/* project 2 ****************************** */}
       <div className='flex justify-center p-2'>
         <table className='border-2 p-8 rounded-lg'>
           <thead className='hover:bg-transparent m-4'>
